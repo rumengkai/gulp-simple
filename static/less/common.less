@@ -1,6 +1,10 @@
 /* CSS Document */
 body,html{height:100%}
-body{font-family:"微软雅黑";font-size:12px;margin:0;padding:0;border:none;}
+body{-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-khtml-user-select: none;
+user-select: none;font-family:"微软雅黑";font-size:12px;margin:0;padding:0;border:none;}
 html,div,p,span,form,legend,fieldset,h1,h2,h3,h4,h5,h6,hr,ul,li,ol,dl,dd,dt,nr{margin:0;padding:0;border:none;}
 button,img,a,input,textarea,th,td,table,lable{margin:0;padding:0;}
 a{text-decoration:none;color:#000}
@@ -13,3 +17,78 @@ img{border:none}
 .border-r{border: 1px solid #666; border-radius: 5px;}
 button:focus{outline: none;}
 input:focus{outline: none;}
+
+
+@font-color: #cb925f;
+@base-color: #f5f5f5;
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clear{
+  clear:both;
+  overflow: hidden;
+  font-size: 12px;
+}
+body{
+  background: @base-color;
+  font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
+}
+#header{
+  .clear;
+  top: 0;
+  height: 80px;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 1px 5px #eee;
+  z-index: 999;
+  .wrap{
+    max-width: 1080px;
+    margin: auto;
+    .logo{
+      float: left;
+      position: relative;
+      line-height: 80px;
+      img{
+        margin-top: 20px;
+        position: absolute;
+        height: 40px;
+      }
+      p{
+        position: absolute;
+        left: 58px;
+        top: -4px;
+        font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
+        font-size: 19px;
+        width: 100px;
+        font-weight: 900;
+      }
+    }
+  }
+  .nav{
+    float: right;
+    ul{
+      li{
+        float: left;
+        .active{
+          border-bottom: 2px @font-color solid;
+          color: #cb925f;
+        }
+        a{
+          display: inline-block;
+          line-height: 78px;
+          margin-left: 45px;
+          font-size: 16px;
+          color: #1f1f24;
+        }
+        a:hover{
+          border-bottom: 2px @font-color solid;
+          color: #cb925f;
+        }
+      }
+    }
+  }
+}
