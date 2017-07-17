@@ -1,0 +1,15 @@
+body {
+  background: #f5f5f5;
+}
+.con {
+  height: auto;
+  min-height: 1000px;
+  margin: 106px auto 26px;
+  max-width: 740px;
+  background: #fff;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.con .title {
+  font-size: 32px;
+}

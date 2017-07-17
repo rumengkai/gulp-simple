@@ -6,7 +6,7 @@ body{-moz-user-select: none;
 -khtml-user-select: none;
 user-select: none;font-family:"微软雅黑";font-size:12px;margin:0;padding:0;border:none;}
 html,div,p,span,form,legend,fieldset,h1,h2,h3,h4,h5,h6,hr,ul,li,ol,dl,dd,dt,nr{margin:0;padding:0;border:none;}
-button,img,a,input,textarea,th,td,table,lable{margin:0;padding:0;}
+button,img,a,input,textarea,th,td,table,lable{margin:0;padding:0;box-sizing:border-box;}
 a{text-decoration:none;color:#000}
 ul,li,ol{list-style:none}
 img{border:none}
@@ -90,5 +90,18 @@ body{
         }
       }
     }
+  }
+}
+
+.footer{
+  background: #1f1f24;
+  height: 66px;
+  p{
+    line-height: 66px;
+    color: #dedee0;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    letter-spacing:2px;
   }
 }
