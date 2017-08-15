@@ -36,6 +36,8 @@ dl,
 dd,
 dt,
 nr {
+  list-style-type: none;
+  background: none;
   margin: 0;
   padding: 0;
   border: none;
@@ -89,6 +91,12 @@ button:focus {
 }
 input:focus {
   outline: none;
+}
+button {
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
 }
 .fl {
   float: left;

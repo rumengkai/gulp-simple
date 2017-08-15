@@ -8,12 +8,145 @@ body {
   max-width: 1080px;
 }
 .con .con-l {
-  background: #fff;
   box-sizing: border-box;
   height: auto;
   width: 710px;
   float: left;
+  overflow: hidden;
+}
+.con .con-l .channel-info {
   padding: 24px;
+  background: #fff;
+  position: relative;
+}
+.con .con-l .channel-info .top {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.con .con-l .channel-info .top .pic {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+.con .con-l .channel-info .top .pic img {
+  width: 100%;
+  height: 100%;
+}
+.con .con-l .channel-info .top .top-r {
+  margin-left: 26px;
+  float: left;
+  height: 200px;
+  width: 433px;
+  position: relative;
+}
+.con .con-l .channel-info .top .top-r .top-title {
+  font-size: 24px;
+  color: #1f1f24;
+}
+.con .con-l .channel-info .top .top-r .top-brief {
+  font-size: 16px;
+  color: #b4b5b5;
+  line-height: 30px;
+}
+.con .con-l .channel-info .top .top-r .c-info {
+  position: absolute;
+  bottom: 0;
+  width: 433px;
+}
+.con .con-l .channel-info .top .top-r .c-info .p {
+  color: #1f1f24;
+  float: left;
+  font-size: 16px;
+}
+.con .con-l .channel-info .top .top-r .c-info .p p {
+  margin-top: 13px;
+}
+.con .con-l .channel-info .top .top-r .c-info .button {
+  float: right;
+}
+.con .con-l .channel-info .top .top-r .c-info .button .btn {
+  cursor: pointer;
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  background: #cb925f;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+  box-shadow: 1px 2px 2px #ccc;
+  box-sizing: border-box;
+}
+.con .con-l .channel-info .top .top-r .c-info .button .btn:hover {
+  background-color: rgba(203, 146, 95, 0.7);
+}
+.con .con-l .channel-info .c-title {
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 900;
+}
+.con .con-l .channel-info .text {
+  font-size: 16px;
+  width: 100%;
+  text-align: justify;
+}
+.con .con-l .channel-info .channel-intro {
+  margin-top: 20px;
+}
+.con .con-l .channel-info .suitable-people {
+  margin-top: 20px;
+}
+.con .con-l .channel-info .buy-notice {
+  margin-top: 20px;
+}
+.con .con-l .lately-update {
+  padding: 24px;
+  margin-top: 20px;
+  background: #fff;
+}
+.con .con-l .lately-update .l-list {
+  overflow: hidden;
+}
+.con .con-l .lately-update .l-list .l-list-item {
+  width: 200px;
+  margin: 20px 10px 0;
+  float: left;
+}
+.con .con-l .lately-update .l-list .l-list-item:hover {
+  cursor: pointer;
+  color: #cb925f;
+}
+.con .con-l .lately-update .l-list .l-list-item:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+.con .con-l .lately-update .l-list .l-list-item .l-pic {
+  width: 200px;
+  height: 146px;
+  display: block;
+  overflow: hidden;
+}
+.con .con-l .lately-update .l-list .l-list-item .l-pic img {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  width: 100%;
+  height: 100%;
+}
+.con .con-l .lately-update .l-list .l-list-item .l-title {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+}
+.con .con-l .lately-update .l-list .l-list-item .l-date {
+  line-height: 30px;
+  font-size: 12px;
+  color: #b4b5b5;
 }
 .con .con-r {
   background: #fff;
@@ -22,6 +155,49 @@ body {
   width: 340px;
   float: right;
   padding: 24px;
+}
+.con .con-r .c-list .c-list-item {
+  overflow: hidden;
+  display: block;
+  margin-top: 36px;
+}
+.con .con-r .c-list .c-list-item:hover {
+  cursor: pointer;
+  color: #cb925f;
+}
+.con .con-r .c-list .c-list-item:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+.con .con-r .c-list .c-list-item .c-pic {
+  width: 80px;
+  height: 80px;
+  float: left;
+  overflow: hidden;
+}
+.con .con-r .c-list .c-list-item .c-pic img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+.con .con-r .c-list .c-list-item .c-p {
+  float: left;
+  margin-left: 10px;
+}
+.con .con-r .c-list .c-list-item .c-p .c-p-title {
+  font-size: 16px;
+  line-height: 16px;
+}
+.con .con-r .c-list .c-list-item .c-p .c-p-brife {
+  color: #b4b5b5;
+  line-height: 32px;
+}
+.con .con-r .c-list .c-list-item .c-p .c-p-author {
+  margin-top: 14px;
+  color: #b4b5b5;
 }
 .footer {
   background: #1f1f24;
@@ -34,4 +210,27 @@ body {
   width: 100%;
   text-align: center;
   letter-spacing: 2px;
+}
+.title {
+  line-height: 25px;
+  width: 138px;
+  margin: 0 auto 0;
+  text-align: center;
+  position: relative;
+  color: #201f24;
+}
+.title .line-t {
+  line-height: 25px;
+  background-color: #cb925f;
+  width: 13px;
+  height: 2px;
+  margin-top: 12px;
+  display: inline-block;
+}
+.title .title-f {
+  font-size: 18px;
+}
+.title .title-b {
+  color: #ababab;
+  font-size: 16px;
 }
