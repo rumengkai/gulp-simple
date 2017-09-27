@@ -4,7 +4,7 @@ body{-moz-user-select: none;
 -webkit-user-select: none;
 -ms-user-select: none;
 -khtml-user-select: none;
-user-select: none;font-family:"微软雅黑";font-size:12px;margin:0;padding:0;border:none;}
+user-select: none;font-family:"黑体";font-size:12px;margin:0;padding:0;border:none;}
 html,div,p,span,form,legend,fieldset,h1,h2,h3,h4,h5,h6,hr,ul,li,ol,dl,dd,dt,nr{list-style-type:none;background:none;margin:0;padding:0;border:none;}
 button,img,a,input,textarea,th,td,table,lable{margin:0;padding:0;box-sizing:border-box;}
 a{text-decoration:none;color:#000}
@@ -39,7 +39,7 @@ button{
 }
 body{
   background: @base-color;
-  font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
+  font-family:'黑体' Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
 }
 #header{
   .clear;
@@ -66,7 +66,7 @@ body{
         position: absolute;
         left: 58px;
         top: -4px;
-        font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
+        font-family:'黑体' Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;
         font-size: 19px;
         width: 100px;
         font-weight: 900;
@@ -78,9 +78,12 @@ body{
     ul{
       li{
         float: left;
+        position: relative;
         .active{
-          border-bottom: 2px @font-color solid;
           color: #cb925f;
+          .line{
+            width: 100%;
+          }
         }
         a{
           display: inline-block;
@@ -88,10 +91,21 @@ body{
           margin-left: 45px;
           font-size: 16px;
           color: #1f1f24;
+          &:hover{
+            color: #cb925f;
+            .line{
+              transition: 0.5s;
+              width: 100%;
+              margin: auto;
+            }
+          }
         }
-        a:hover{
-          border-bottom: 2px @font-color solid;
-          color: #cb925f;
+        .line{
+          transition: 0.5s;
+          width: 0;
+          margin: auto;
+          height: 2px;
+          background: @font-color;
         }
       }
     }
