@@ -52,6 +52,7 @@ body{
   z-index: 999;
   .wrap{
     max-width: 1080px;
+    min-width: 1080px;
     margin: auto;
     .logo{
       float: left;
@@ -88,7 +89,7 @@ body{
         a{
           display: inline-block;
           line-height: 78px;
-          margin-left: 45px;
+          margin-left: .35rem;
           font-size: 16px;
           color: #1f1f24;
           &:hover{
@@ -111,10 +112,10 @@ body{
     }
   }
 }
-
 .footer{
   background: #1f1f24;
   height: 66px;
+  min-width: 1080px;
   p{
     line-height: 66px;
     color: #dedee0;
@@ -122,5 +123,23 @@ body{
     width: 100%;
     text-align: center;
     letter-spacing:2px;
+  }
+}
+.con-more{
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  .btn-more{
+    color: #fff;
+    line-height: 36px;
+    width: 160px;
+    height: 36px;
+    font-size: 20px;
+    background-color: @font-color;
+    border-radius: 18px;
+    display: inline-block;
+    &:hover{
+      background-color: rgba(203,146,95,0.8);
+    }
   }
 }

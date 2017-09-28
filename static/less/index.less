@@ -55,7 +55,7 @@ body{
       align-items: center;
       justify-content:space-between;
       li{
-        cursor: pointer;
+        // cursor: pointer;
         width: 100px;
         height: 100px;
         position: relative;
@@ -161,6 +161,7 @@ body{
   }
 }
 #channels{
+  min-width: 1080px;
   height: 560px;
   .title{
     margin:40px auto 40px;
@@ -289,29 +290,14 @@ body{
     }
   }
 }
-.con-more{
-  width: 100%;
-  text-align: center;
-  margin: 10px auto;
-  .btn-more{
-    color: #fff;
-    line-height: 36px;
-    width: 160px;
-    height: 36px;
-    font-size: 20px;
-    background-color: @font-color;
-    border-radius: 18px;
-    display: inline-block;
-    &:hover{
-      background-color: rgba(203,146,95,0.8);
-    }
-  }
-}
+
 .business{
   background: #fff;
   height: 344px;
+  min-width: 1080px;
   .business-l{
     max-width: 1080px;
+    min-width: 1080px;
     margin:20px auto 0;
     ul{
       display: flex;
@@ -359,7 +345,9 @@ body{
 .friendlink{
   background: @base-color;
   height: 540px;
+  min-width: 1080px;
   .platforms{
+    min-width: 1080px;
     max-width: 1080px;
     margin:20px auto 0;
     ul{
@@ -430,20 +418,6 @@ body{
     }
   }
 }
-.footer{
-  background: #1f1f24;
-  height: 66px;
-  overflow: hidden;
-  p{
-    line-height: 66px;
-    color: @font-color-g;
-    font-size: 16px;
-    width: 100%;
-    text-align: center;
-    letter-spacing:2px;
-  }
-}
-
 .title{
   line-height: 25px;
   width: 172px;

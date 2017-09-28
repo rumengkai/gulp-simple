@@ -1,0 +1,10 @@
+body {
+  margin: auto;
+}
+.con {
+  min-width: 1080px;
+  max-width: 1080px;
+  margin: 100px auto;
+  height: 400px;
+  position: relative;
+}

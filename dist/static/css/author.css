@@ -1,0 +1,92 @@
+body {
+  margin: auto;
+}
+.author-list {
+  min-width: 1080px;
+  max-width: 1080px;
+  margin: 100px auto;
+}
+.author-list ul {
+  margin-top: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.author-list ul li {
+  margin-top: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  width: 240px;
+  height: 470px;
+  position: relative;
+  background: #fff;
+}
+.author-list ul li .author-headimg {
+  position: relative;
+}
+.author-list ul li .author-headimg:hover .mbtext,
+.author-list ul li .author-headimg:hover .mb-b {
+  opacity: 1;
+  transition: 0.5s;
+}
+.author-list ul li .author-headimg img {
+  display: block;
+  width: 100%;
+  height: 320px;
+}
+.author-list ul li .author-headimg .mb-b {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  height: 320px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.author-list ul li .author-headimg .mbtext {
+  transition: 0.5s;
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  color: #ddd;
+  padding: 20px;
+  text-align: justify;
+  box-sizing: border-box;
+  line-height: 20px;
+  font-size: 14px;
+}
+.author-list ul li .author-info {
+  box-sizing: border-box;
+  border-bottom: 1px #999 solid;
+  width: 90%;
+  margin: 15px auto 0;
+  height: 60px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+  color: #333;
+}
+.author-list ul li .author-info .author-brief {
+  color: #aaa;
+  font-size: 12px;
+}
+.author-list ul li .author-tag {
+  box-sizing: border-box;
+  line-height: 24px;
+  padding: 10px 0;
+}
+.author-list ul li .author-tag span {
+  color: #999;
+  padding: 0 14px;
+  text-align: center;
+  display: inline-block;
+}
+.author-list ul li .author-tag span.active {
+  color: #cb925f;
+}
+.author-list .con-more {
+  margin-top: 40px;
+}

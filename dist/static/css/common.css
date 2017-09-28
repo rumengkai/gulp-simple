@@ -129,6 +129,7 @@ body {
 }
 #header .wrap {
   max-width: 1080px;
+  min-width: 1080px;
   margin: auto;
 }
 #header .wrap .logo {
@@ -166,7 +167,7 @@ body {
 #header .nav ul li a {
   display: inline-block;
   line-height: 78px;
-  margin-left: 45px;
+  margin-left: .35rem;
   font-size: 16px;
   color: #1f1f24;
 }
@@ -188,6 +189,7 @@ body {
 .footer {
   background: #1f1f24;
   height: 66px;
+  min-width: 1080px;
 }
 .footer p {
   line-height: 66px;
@@ -196,4 +198,22 @@ body {
   width: 100%;
   text-align: center;
   letter-spacing: 2px;
+}
+.con-more {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+}
+.con-more .btn-more {
+  color: #fff;
+  line-height: 36px;
+  width: 160px;
+  height: 36px;
+  font-size: 20px;
+  background-color: #cb925f;
+  border-radius: 18px;
+  display: inline-block;
+}
+.con-more .btn-more:hover {
+  background-color: rgba(203, 146, 95, 0.8);
 }

@@ -39,7 +39,7 @@ gulp.task("concatJS",function(){
 })
 //处理images
 gulp.task('imagemin', function() {
-	gulp.src('static/images/*.{png,jpg,gif}')
+	gulp.src('static/images/**/*.{png,jpg,gif}')
 		// .pipe(imagemin())
   	.pipe(gulp.dest('dist/static/images/'))
 		.pipe(connect.reload())
