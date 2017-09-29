@@ -128,6 +128,7 @@ body {
   color: #333;
 }
 #author_server .author-list ul li .author-info .author-brief {
+  margin: auto;
   color: #aaa;
   font-size: 12px;
 }
@@ -530,11 +531,13 @@ body {
   color: #cb925f;
 }
 .loop .swiper-slide .author-brief {
+  margin-left: -108px;
+  left: 50%;
   bottom: 10px;
   line-height: 20px;
   font-size: 14px;
   position: absolute;
-  width: 90%;
+  width: 216px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
