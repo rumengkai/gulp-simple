@@ -1,8 +1,8 @@
 
 /* 关于无法获取行内样式的问题 */
-//obj.style.left = "10px"      
+//obj.style.left = "10px"
 //IE   obj.currentStyle.left
-//非IE  getComputedStyle(obj, null).left						
+//非IE  getComputedStyle(obj, null).left
 
 //先写测试代码,测试驱动法   极限编程  XP
 //var left = getStyle(obj).left;
@@ -11,7 +11,7 @@ function getStyle(target){
 	if(target.currentStyle) {
 		return target.currentStyle;
 	} else {
-		return getComputedStyle(target, null);	
+		return getComputedStyle(target, null);
 	}
 }
 
@@ -71,8 +71,8 @@ function getChildElements(obj) {
 //获取cookie
 function getCookie(key){
 	var list = document.cookie.split(";");  //username=yintao; password=123; xxx=vvvv;
-	for(var i in list){	
-		var keyVal = list[i].split("="); //[" password", "123"] 
+	for(var i in list){
+		var keyVal = list[i].split("="); //[" password", "123"]
 		if(key == trim(keyVal[0])){
 			return keyVal[1];
 		}
@@ -136,3 +136,6 @@ function getCookie(key){
  		_ajax.send(parameterDeal(_parameter));
  	}
  }
+
+
+ 
