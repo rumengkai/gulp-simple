@@ -9,6 +9,7 @@ body {
   position: relative;
 }
 .con .img {
+  width: 240px;
   position: absolute;
   bottom: 0;
 }
@@ -63,6 +64,7 @@ body {
   width: 30px;
   height: 30px;
   position: absolute;
+  z-index: 100;
   left: 36px;
   top: 3px;
 }

@@ -5,12 +5,59 @@
 body{
   background: @base-color;
 }
-.con{
+.article-list{
   height: auto;
   min-height: 1000px;
   margin:106px auto 26px;
   max-width: 740px;
   background: #fff;
-  padding: 50px;
+  padding: 20px;
   box-sizing: border-box;
+  .a-title{
+    font-size: 20px;
+    line-height: 40px;
+  }
+  ul{
+    li{
+      height: 173px;
+      box-sizing: border-box;
+      padding: 20px 0;
+      // background: #ccc;
+      .img{
+        float: left;
+        img{
+          width: 200px;
+        }
+      }
+      .right{
+        box-sizing: border-box;
+        height: 133px;
+        position: relative;
+        margin-left: 220px;
+        .name{
+          font-size: 20px;
+        }
+        .author{
+          position: absolute;
+          bottom: 0px;
+          width: 450px;
+          font-size: 16px;
+          color: #999;
+          span{
+            display: inline-block;
+            line-height: 50px;
+          }
+          img{
+            vertical-align:middle;
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+          }
+          .pub-date{
+            float: right;
+          }
+        }
+      }
+    }
+  }
 }
