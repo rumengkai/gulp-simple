@@ -7,9 +7,95 @@ body {
   margin: 106px auto 26px;
   max-width: 740px;
   background: #fff;
-  padding: 50px;
+  padding: 20px;
   box-sizing: border-box;
 }
 .con .title {
   font-size: 32px;
+}
+.con .a {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 100;
+}
+.con .author {
+  float: left;
+  margin-top: 20px;
+  width: 300px;
+  font-size: 16px;
+  color: #cb925f;
+}
+.con .author span {
+  display: inline-block;
+  line-height: 50px;
+}
+.con .author .img {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+}
+.con .author .pub-date {
+  color: #999;
+  margin-left: 20px;
+}
+.con .btn-r {
+  position: absolute;
+  right: 0;
+  margin-top: 30px;
+  width: 300px;
+}
+.con .btn-r .phone,
+.con .btn-r .down {
+  margin-left: 30px;
+  float: right;
+  width: 120px;
+}
+.con .btn-r .btn {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  line-height: 30px;
+  background: #cb925f;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.con .btn-r .phone:hover .phone-read {
+  display: block;
+}
+.con .btn-r .down:hover .down-read {
+  display: block;
+}
+.con .btn-r .phone-read,
+.con .btn-r .down-read {
+  display: none;
+  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+}
+.con .banner {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.con .banner img {
+  width: 100%;
+}
+.con .video {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.con #content {
+  width: 100%;
+  height: auto;
+  position: relative;
+  line-height: 25px;
+  font-size: 18px;
+}
+.con #content img {
+  width: 100%;
 }
