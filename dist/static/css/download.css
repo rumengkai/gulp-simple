@@ -38,7 +38,8 @@ body {
 }
 .download {
   min-width: 800px;
-  margin-top: 80px;
+  padding-top: 100px;
+  height: 320px;
   width: 100%;
   background: #fcfcfc;
 }
@@ -47,7 +48,7 @@ body {
   height: 320px;
 }
 .download .app {
-  top: 204px;
+  top: 177px;
   right: 20px;
   width: 60%;
   position: absolute;
@@ -72,6 +73,8 @@ body {
   opacity: 1;
 }
 .download .app .con-more .download_app {
+  position: relative;
+  z-index: 999;
   opacity: 0;
   width: 120px;
   height: 120px;
