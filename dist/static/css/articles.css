@@ -18,6 +18,10 @@ body {
   height: 173px;
   box-sizing: border-box;
   padding: 20px 0;
+  cursor: pointer;
+}
+.article-list ul li:hover .name {
+  color: #cb925f;
 }
 .article-list ul li .img {
   float: left;

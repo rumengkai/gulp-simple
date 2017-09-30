@@ -65,7 +65,7 @@ body {
   height: 25px;
   position: absolute;
   z-index: 100;
-  left: 15px;
+  left: 20px;
   top: 6px;
 }
 .download .app .con-more:hover .download_app {
