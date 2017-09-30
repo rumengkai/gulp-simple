@@ -170,30 +170,33 @@ body{
 }
 .article{
   background: @base-color;
-  height: 634px;
+  height: 600px;
   margin: auto;
   min-width: 1080px;
   max-width: 1080px;
   position: relative;
   .con{
     margin: 30px 0;
-    height: 400px;;
+    height: 355px;;
     width: 100%;
+    position: relative;
   }
   .con-l{
     width:530px;
-    height: 400px;
+    height: 355px;
     position: relative;
     overflow: hidden;
     float: left;
     img{
       width: 530px;
-      height: 400px;
+      height: 355px;
       overflow: hidden;
       transition:0.5s;
       -webkit-transition: 0.5s;
       -moz-transition: 0.5s;
-      &:hover{
+    }
+    &:hover{
+      img{
         transform:scale(1.2);
         -webkit-transform: scale(1.2);
         -moz-transform: scale(1.2);
@@ -233,7 +236,7 @@ body{
   }
   .con-r{
     width:530px;
-    height: 400px;
+    height: 355px;
     position: relative;
     float: right;
     ul{
@@ -250,7 +253,7 @@ body{
         margin-bottom: 20px;
         img{
           width: 160px;
-          height: 120px;
+          height: 105px;
           float: left;
           display: block;
 
