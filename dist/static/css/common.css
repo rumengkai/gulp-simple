@@ -4,11 +4,6 @@ html {
   height: 100%;
 }
 body {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -khtml-user-select: none;
-  user-select: none;
   font-family: '黑体', "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   margin: 0;

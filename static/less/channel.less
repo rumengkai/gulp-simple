@@ -6,14 +6,14 @@ body{
   background: @base-color;
 }
 .con{
-  min-height: 1000px;
+  min-height: 900px;
   height: auto;
   margin:106px auto 26px;
-  max-width: 1080px;
+  max-width: 900px;
   .con-l{
     box-sizing: border-box;
     height: auto;
-    width: 710px;
+    width: 630px;
     float: left;
     overflow: hidden;
     .channel-info{
@@ -26,8 +26,8 @@ body{
         width: 100%;
         .pic{
           float: left;
-          width: 200px;
-          height: 200px;
+          width: 108px;
+          height: 108px;
           img{
             width: 100%;
             height: 100%;
@@ -36,61 +36,70 @@ body{
         .top-r{
           margin-left: 26px;
           float: left;
-          height: 200px;
-          width: 433px;
+          height: 110px;
+          width: 420px;
           position: relative;
+          .button{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            .btn{
+              &:hover{
+                background-color: rgba(203,146,95,0.7);
+              }
+              cursor: pointer;
+              color: #fff;
+              width: 80px;
+              height: 28px;
+              line-height: 28px;
+              background: #cb925f;
+              border-radius: 20px;
+              box-shadow: 1px 2px 2px #ccc;
+              box-sizing: border-box;
+            }
+          }
           .top-title{
-            font-size: 24px;
+            font-size: 20px;
             color: #1f1f24;
           }
           .top-brief{
-            font-size: 16px;
+            margin-top: 10px;
+            font-size: 14px;
             color: #b4b5b5;
-            line-height: 30px;
+            line-height: 20px;
           }
           .c-info{
             position: absolute;
+            width: 420px;
             bottom: 0;
-            width: 433px;
             .p{
               color: #1f1f24;
-              float: left;
-              font-size: 16px;
-              p{
-                margin-top: 13px;
-              }
-            }
-            .button{
-              float: right;
-              .btn{
-                &:hover{
-                  background-color: rgba(203,146,95,0.7);
+              font-size: 12px;
+              .name{
+                float: left;
+                .active{
+                  color: @font-color;
                 }
-                cursor: pointer;
-                color: #fff;
-                width: 100px;
-                height: 35px;
-                line-height: 35px;
-                background: #cb925f;
-                border-radius: 20px;
-                margin-top: 30px;
-                margin-left:  10px;
-                box-shadow: 1px 2px 2px #ccc;
-                box-sizing: border-box;
+              }
+              .update{
+                float: right;
               }
             }
+
           }
         }
       }
       .c-title{
-        font-size: 18px;
-        line-height: 35px;
+        font-size: 16px;
+        line-height: 45px;
         font-weight: 900;
       }
       .text{
-        font-size: 16px;
+        font-size: 14px;
         width: 100%;
         text-align: justify;
+        color: #333;
+        line-height: 22px;
       }
       .channel-intro{
         margin-top: 20px;
@@ -118,12 +127,12 @@ body{
               -moz-transform: scale(1.1);
             }
           }
-          width: 200px;
+          width: 172px;
           margin:20px 10px 0;
           float: left;
           .l-pic{
-            width: 200px;
-            height: 146px;
+            width: 100%;
+            height: 114px;
             display: block;
             overflow: hidden;
             img{
@@ -136,16 +145,16 @@ body{
           }
           .l-title{
             text-align: justify;
-            font-size: 16px;
-            line-height: 30px;
+            font-size: 14px;
+            line-height: 20px;
             margin-top: 10px;
             width: 100%;
-            height: 60px;
+            height: 55px;
           }
           .l-date{
             line-height: 30px;
             font-size: 12px;
-            color: #b4b5b5;
+            color: #999;
           }
         }
       }
@@ -155,26 +164,21 @@ body{
     background: #fff;
     box-sizing: border-box;
     height: auto;
-    width: 340px;
+    width: 250px;
     float: right;
-    padding: 24px;
+    padding: 15px;
     .c-list{
       .c-list-item{
         overflow: hidden;
         display: block;
-        margin-top: 36px;
+        margin-top: 25px;
         &:hover{
           cursor: pointer;
           color: #cb925f;
-          img{
-            transform:scale(1.1);
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-          }
-          // .c-p{
-          //   .c-p-title{
-          //     font-weight: 900;
-          //   }
+          // img{
+          //   transform:scale(1.1);
+          //   -webkit-transform: scale(1.1);
+          //   -moz-transform: scale(1.1);
           // }
         }
         .c-pic{
@@ -185,30 +189,35 @@ body{
           img{
             width: 100%;
             height: 100%;
-            transition:0.5s;
-            -webkit-transition: 0.5s;
-            -moz-transition: 0.5s;
+            // transition:0.5s;
+            // -webkit-transition: 0.5s;
+            // -moz-transition: 0.5s;
           }
         }
         .c-p{
           float: left;
           margin-left: 10px;
+          width: 120px;
+          height: 80px;
+          position: relative;
           .c-p-title{
-            font-size: 16px;
+            font-size: 14px;
             line-height: 16px;
           }
           .c-p-brife{
+            margin-top: 8px;
             color: #b4b5b5;
-            line-height: 32px;
+            line-height: 16px;
           }
           .c-p-author{
+            position: absolute;
+            bottom: 0;
             margin-top:14px;
             color: #b4b5b5;
           }
         }
       }
     }
-
   }
 }
 
@@ -245,5 +254,21 @@ body{
   .title-b{
     color: #ababab;
     font-size: 16px;
+  }
+}
+.layer-alert{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  p{
+    color: @font-color;
+    text-align: center;
+    line-height: 50px;
+  }
+  img{
+    display: block;
+    margin:10px auto;
+    width: 100px;
+    height: 100px;
   }
 }
