@@ -28,6 +28,7 @@ body {
 }
 .article-list ul li .img img {
   width: 200px;
+  height: 133px;
 }
 .article-list ul li .right {
   box-sizing: border-box;
