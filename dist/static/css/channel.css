@@ -4,8 +4,9 @@ body {
 .con {
   min-height: 900px;
   height: auto;
-  margin: 106px auto 26px;
+  margin: 90px auto 26px;
   max-width: 900px;
+  min-width: 900px;
 }
 .con .con-l {
   box-sizing: border-box;
@@ -123,6 +124,8 @@ body {
 }
 .con .con-l .lately-update .l-list .l-list-item:hover {
   cursor: pointer;
+}
+.con .con-l .lately-update .l-list .l-list-item:hover .l-title {
   color: #cb925f;
 }
 .con .con-l .lately-update .l-list .l-list-item:hover img {
@@ -171,6 +174,8 @@ body {
 }
 .con .con-r .c-list .c-list-item:hover {
   cursor: pointer;
+}
+.con .con-r .c-list .c-list-item:hover .c-p .c-p-title {
   color: #cb925f;
 }
 .con .con-r .c-list .c-list-item .c-pic {

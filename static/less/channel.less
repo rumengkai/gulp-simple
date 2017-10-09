@@ -8,8 +8,9 @@ body{
 .con{
   min-height: 900px;
   height: auto;
-  margin:106px auto 26px;
+  margin:90px auto 26px;
   max-width: 900px;
+  min-width: 900px;
   .con-l{
     box-sizing: border-box;
     height: auto;
@@ -120,7 +121,9 @@ body{
         .l-list-item{
           &:hover{
             cursor: pointer;
-            color: #cb925f;
+            .l-title{
+              color: @font-color;
+            }
             img{
               transform:scale(1.1);
               -webkit-transform: scale(1.1);
@@ -174,7 +177,11 @@ body{
         margin-top: 25px;
         &:hover{
           cursor: pointer;
-          color: #cb925f;
+          .c-p{
+            .c-p-title{
+              color: @font-color;
+            }
+          }
           // img{
           //   transform:scale(1.1);
           //   -webkit-transform: scale(1.1);

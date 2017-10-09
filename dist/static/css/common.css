@@ -212,3 +212,19 @@ body {
 .con-more .btn-more:hover {
   background-color: rgba(203, 146, 95, 0.8);
 }
+.load-more {
+  float: right;
+}
+.load-more .up-page,
+.load-more .down-page {
+  width: 100px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 20px;
+  color: #cb925f;
+  border: 1px #cb925f solid;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 10px;
+}

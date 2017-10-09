@@ -1,0 +1,249 @@
+body {
+  background: #f5f5f5;
+}
+.top .bg {
+  padding-top: 80px;
+}
+.top .bg img {
+  width: 100%;
+  height: 260px;
+}
+.top .author-img {
+  height: auto;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+}
+.top .author-img .headimg img {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #fff;
+  border-radius: 60px;
+  margin-top: -70px;
+}
+.top .author-img .name {
+  font-size: 20px;
+  line-height: 28px;
+}
+.top .author-img .brief {
+  font-size: 14px;
+  line-height: 20px;
+}
+.top .author-img .tag {
+  color: #999;
+  font-size: 14px;
+  line-height: 35px;
+}
+.top .author-img .tag .active {
+  color: #cb925f;
+}
+.top .author-img .info {
+  line-height: 20px;
+  color: #333;
+  width: 900px;
+  margin: auto;
+}
+.con {
+  min-height: 800px;
+  height: auto;
+  margin: 20px auto 26px;
+  max-width: 900px;
+  min-width: 900px;
+}
+.con .con-l {
+  box-sizing: border-box;
+  height: auto;
+  width: 630px;
+  float: left;
+  overflow: hidden;
+  padding-bottom: 20px;
+  background: #fff;
+}
+.con .con-l .author-info {
+  padding: 0 24px 24px;
+  position: relative;
+}
+.con .con-l .author-info .c-title {
+  color: #333;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 45px;
+  font-weight: 900;
+}
+.con .con-l .author-info .channel-list {
+  padding-bottom: 20px;
+  font-size: 14px;
+  width: 100%;
+  text-align: justify;
+  color: #333;
+  line-height: 22px;
+  border-bottom: 1px #ccc solid;
+}
+.con .con-l .author-info .channel-list li {
+  height: 120px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.con .con-l .author-info .channel-list li:hover .name {
+  color: #cb925f;
+}
+.con .con-l .author-info .channel-list li .img {
+  float: left;
+}
+.con .con-l .author-info .channel-list li .img img {
+  width: 120px;
+  height: 120px;
+}
+.con .con-l .author-info .channel-list li .right {
+  margin-left: 140px;
+  height: 120px;
+  position: relative;
+}
+.con .con-l .author-info .channel-list li .right .name {
+  font-size: 20px;
+}
+.con .con-l .author-info .channel-list li .right .brief {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #999;
+}
+.con .con-l .author-info .channel-list li .price {
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  color: #cb925f;
+}
+.con .con-l .author-info .articles-list li {
+  height: 120px;
+  box-sizing: border-box;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.con .con-l .author-info .articles-list li:hover .name {
+  color: #cb925f;
+}
+.con .con-l .author-info .articles-list li .img {
+  float: left;
+}
+.con .con-l .author-info .articles-list li .img img {
+  width: 120px;
+  height: 80px;
+}
+.con .con-l .author-info .articles-list li .right {
+  box-sizing: border-box;
+  height: 80px;
+  position: relative;
+  margin-left: 145px;
+}
+.con .con-l .author-info .articles-list li .right .name {
+  font-size: 16px;
+}
+.con .con-l .author-info .articles-list li .right .author {
+  position: absolute;
+  bottom: 0px;
+  width: 430px;
+  font-size: 14px;
+  color: #999;
+}
+.con .con-l .author-info .articles-list li .right .author span {
+  display: inline-block;
+  line-height: 30px;
+}
+.con .con-l .author-info .articles-list li .right .author img {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+}
+.con .con-l .author-info .articles-list li .right .author .pub-date {
+  float: right;
+  line-height: 30px;
+}
+.con .con-r {
+  background: #fff;
+  box-sizing: border-box;
+  height: auto;
+  width: 250px;
+  float: right;
+  padding: 15px;
+}
+.con .con-r .c-list .c-list-item {
+  overflow: hidden;
+  display: block;
+  margin-top: 25px;
+}
+.con .con-r .c-list .c-list-item:hover {
+  cursor: pointer;
+}
+.con .con-r .c-list .c-list-item:hover .c-p .c-p-title {
+  color: #cb925f;
+}
+.con .con-r .c-list .c-list-item .c-pic {
+  width: 80px;
+  height: 80px;
+  float: left;
+  overflow: hidden;
+}
+.con .con-r .c-list .c-list-item .c-pic img {
+  width: 100%;
+  height: 100%;
+}
+.con .con-r .c-list .c-list-item .c-p {
+  float: left;
+  margin-left: 10px;
+  width: 120px;
+  height: 80px;
+  position: relative;
+}
+.con .con-r .c-list .c-list-item .c-p .c-p-title {
+  font-size: 14px;
+  line-height: 16px;
+}
+.con .con-r .c-list .c-list-item .c-p .c-p-brife {
+  margin-top: 18px;
+  color: #b4b5b5;
+  line-height: 16px;
+}
+.con .con-r .c-list .c-list-item .c-p .c-p-author {
+  position: absolute;
+  bottom: 0;
+  margin-top: 14px;
+  color: #b4b5b5;
+}
+.footer {
+  background: #1f1f24;
+  height: 66px;
+}
+.footer p {
+  line-height: 66px;
+  color: #dedee0;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.title {
+  line-height: 25px;
+  width: 138px;
+  margin: 0 auto 0;
+  text-align: center;
+  position: relative;
+  color: #201f24;
+}
+.title .line-t {
+  line-height: 25px;
+  background-color: #cb925f;
+  width: 13px;
+  height: 2px;
+  margin-top: 12px;
+  display: inline-block;
+}
+.title .title-f {
+  font-size: 18px;
+}
+.title .title-b {
+  color: #ababab;
+  font-size: 16px;
+}
