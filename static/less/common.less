@@ -6,7 +6,8 @@ body{
   // -ms-user-select: none;
   // -khtml-user-select: none;
   // user-select: none;
-  font-family:'黑体' ,"Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;margin:0;padding:0;border:none;
+  background: @base-color;
+  font-family:"Microsoft Yahei",'黑体',"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;margin:0;padding:0;border:none;
 }
 html,div,p,span,form,legend,fieldset,h1,h2,h3,h4,h5,h6,hr,ul,li,ol,dl,dd,dt,nr{list-style-type:none;background:none;margin:0;padding:0;border:none;}
 button,img,a,input,textarea,th,td,table,lable{margin:0;padding:0;box-sizing:border-box;}
@@ -39,10 +40,6 @@ button{
   clear:both;
   overflow: hidden;
   font-size: 12px;
-}
-body{
-  background: @base-color;
-  font-family: "Microsoft Yahei",'黑体',"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #header{
   .clear;
@@ -159,5 +156,21 @@ body{
     display: inline-block;
     font-size: 15px;
     margin-left: 10px;
+  }
+}
+.layer-alert{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  p{
+    color: @font-color;
+    text-align: center;
+    line-height: 50px;
+  }
+  img{
+    display: block;
+    margin:10px auto;
+    width: 100px;
+    height: 100px;
   }
 }

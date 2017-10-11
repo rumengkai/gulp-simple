@@ -245,19 +245,3 @@ body {
   color: #ababab;
   font-size: 16px;
 }
-.layer-alert {
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-}
-.layer-alert p {
-  color: #cb925f;
-  text-align: center;
-  line-height: 50px;
-}
-.layer-alert img {
-  display: block;
-  margin: 10px auto;
-  width: 100px;
-  height: 100px;
-}

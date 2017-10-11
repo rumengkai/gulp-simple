@@ -20,6 +20,8 @@
 }
 
 .audio_wrp {
+  width: 600px;
+  margin: auto;
   border: 1px solid #ebebeb;
   background-color: #fcfcfc;
   overflow: hidden;
@@ -54,7 +56,8 @@
   font-weight: 400;
   font-size: 17px;
   margin-top: -2px;
-  width: auto;
+  width: 450px;
+  display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
