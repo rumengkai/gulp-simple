@@ -148,6 +148,7 @@ body {
   color: #999;
 }
 .con .con-l .author-info .articles-list li .right .author span {
+  margin-left: 10px;
   display: inline-block;
   line-height: 30px;
 }

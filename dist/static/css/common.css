@@ -241,3 +241,6 @@ button {
   width: 100px;
   height: 100px;
 }
+a[href="http://www.cnzz.com/stat/website.php?web_id=1262850066"] {
+  display: none;
+}

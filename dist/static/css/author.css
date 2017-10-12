@@ -15,43 +15,59 @@ body {
   flex-wrap: wrap;
 }
 .author-list ul li {
-  margin: 0 15px;
-  margin-top: 40px;
+  margin: 80px 15px 0;
   border-radius: 5px;
   cursor: pointer;
-  overflow: hidden;
   width: 240px;
-  height: 470px;
+  height: 290px;
   position: relative;
   background: #fff;
 }
 .author-list ul li .author-headimg {
-  position: relative;
-}
-.author-list ul li .author-headimg:hover .mbtext,
-.author-list ul li .author-headimg:hover .mb-b {
-  opacity: 1;
-  transition: 0.5s;
+  position: absolute;
+  margin-left: -46px;
+  left: 50%;
+  top: -50px;
+  z-index: 888;
 }
 .author-list ul li .author-headimg img {
   display: block;
-  width: 100%;
-  height: 320px;
+  width: 92px;
+  height: 92px;
+  border-radius: 50px;
+  border: 2px solid #cb925f;
 }
-.author-list ul li .author-headimg .mb-b {
+.author-list ul li:hover .mbtext,
+.author-list ul li:hover .mb-b {
+  opacity: 1;
+  transition: 0.3s;
+}
+.author-list ul li:hover .author-headimg img {
+  transition: 0.3s;
+  border: 2px solid #fff;
+}
+.author-list ul li:hover .author-info {
+  color: #fff;
+}
+.author-list ul li:hover .author-info .author-brief {
+  color: #fff;
+}
+.author-list ul li .mb-b {
+  border-radius: 5px;
+  top: 0;
   opacity: 0;
   width: 100%;
   position: absolute;
-  height: 320px;
+  height: 290px;
   bottom: 0px;
-  background: rgba(0, 0, 0, 0.5);
+  background: #cb925f;
 }
-.author-list ul li .author-headimg .mbtext {
+.author-list ul li .mbtext {
   transition: 0.5s;
   opacity: 0;
   position: absolute;
   bottom: 0px;
-  color: #ddd;
+  color: #fff;
   padding: 20px;
   text-align: justify;
   box-sizing: border-box;
@@ -60,27 +76,33 @@ body {
 }
 .author-list ul li .author-info {
   box-sizing: border-box;
-  border-bottom: 1px #999 solid;
   width: 90%;
-  margin: 15px auto 0;
+  margin: 80px auto 0;
   height: 60px;
   text-align: center;
   line-height: 25px;
-  font-size: 16px;
-  color: #333;
+  font-size: 20px;
+  color: #cb925f;
+  position: relative;
+  z-index: 900;
 }
 .author-list ul li .author-info .author-brief {
-  color: #aaa;
-  font-size: 12px;
+  margin: auto;
+  color: #333;
+  font-size: 14px;
+  line-height: 30px;
 }
 .author-list ul li .author-tag {
+  margin-top: 20px;
+  text-align: justify;
   box-sizing: border-box;
   line-height: 24px;
-  padding: 10px 0;
+  padding: 20px 10px;
+  font-size: 14px;
 }
 .author-list ul li .author-tag span {
   color: #999;
-  padding: 0 14px;
+  padding: 0 6px;
   text-align: center;
   display: inline-block;
 }

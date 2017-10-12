@@ -5,9 +5,9 @@
 }
 
 .audio_area {
-  width: 3rem;
+  width: 600px;
   left: 50%;
-  margin-left: -1.5rem;
+  margin-left: -300px;
   display: inline-block;
   vertical-align: top;
   margin-top: 17px;

@@ -68,48 +68,65 @@ body {
 }
 #author_server .author-list ul {
   margin-top: 40px;
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 #author_server .author-list ul li {
+  margin-top: 50px;
   border-radius: 5px;
   cursor: pointer;
-  overflow: hidden;
   width: 240px;
-  height: 470px;
+  height: 290px;
   position: relative;
   background: #fff;
 }
 #author_server .author-list ul li .author-headimg {
-  position: relative;
-}
-#author_server .author-list ul li .author-headimg:hover .mbtext,
-#author_server .author-list ul li .author-headimg:hover .mb-b {
-  opacity: 1;
-  transition: 0.5s;
+  position: absolute;
+  margin-left: -46px;
+  left: 50%;
+  top: -50px;
+  z-index: 888;
 }
 #author_server .author-list ul li .author-headimg img {
   display: block;
-  width: 100%;
-  height: 320px;
+  width: 92px;
+  height: 92px;
+  border-radius: 50px;
+  border: 2px solid #cb925f;
 }
-#author_server .author-list ul li .author-headimg .mb-b {
+#author_server .author-list ul li:hover .mbtext,
+#author_server .author-list ul li:hover .mb-b {
+  opacity: 1;
+  transition: 0.3s;
+}
+#author_server .author-list ul li:hover .author-headimg img {
+  transition: 0.3s;
+  border: 2px solid #fff;
+}
+#author_server .author-list ul li:hover .author-info {
+  color: #fff;
+}
+#author_server .author-list ul li:hover .author-info .author-brief {
+  color: #fff;
+}
+#author_server .author-list ul li .mb-b {
+  border-radius: 5px;
+  top: 0;
   opacity: 0;
   width: 100%;
   position: absolute;
-  height: 320px;
+  height: 290px;
   bottom: 0px;
-  background: rgba(0, 0, 0, 0.5);
+  background: #cb925f;
 }
-#author_server .author-list ul li .author-headimg .mbtext {
+#author_server .author-list ul li .mbtext {
   transition: 0.5s;
   opacity: 0;
   position: absolute;
   bottom: 0px;
-  color: #ddd;
+  color: #fff;
   padding: 20px;
   text-align: justify;
   box-sizing: border-box;
@@ -118,28 +135,33 @@ body {
 }
 #author_server .author-list ul li .author-info {
   box-sizing: border-box;
-  border-bottom: 1px #999 solid;
   width: 90%;
-  margin: 15px auto 0;
+  margin: 80px auto 0;
   height: 60px;
   text-align: center;
   line-height: 25px;
-  font-size: 16px;
-  color: #333;
+  font-size: 20px;
+  color: #cb925f;
+  position: relative;
+  z-index: 900;
 }
 #author_server .author-list ul li .author-info .author-brief {
   margin: auto;
-  color: #aaa;
-  font-size: 12px;
+  color: #333;
+  font-size: 14px;
+  line-height: 30px;
 }
 #author_server .author-list ul li .author-tag {
+  margin-top: 20px;
+  text-align: justify;
   box-sizing: border-box;
   line-height: 24px;
-  padding: 10px 0;
+  padding: 20px 10px;
+  font-size: 14px;
 }
 #author_server .author-list ul li .author-tag span {
   color: #999;
-  padding: 0 14px;
+  padding: 0 6px;
   text-align: center;
   display: inline-block;
 }
@@ -193,7 +215,6 @@ body {
 .article .con-l .con-bottom {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 130px;
   color: #fff;
   position: absolute;
   bottom: 0;
