@@ -1,0 +1,15 @@
+.con {
+  padding: 200px 0;
+  font-size: 14px;
+  min-height: 650px;
+  box-sizing: border-box;
+}
+.con .form {
+  background: #fff;
+  padding: 50px 20px 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 400px;
+  margin: auto;
+  box-shadow: 2px 2px 2px #eee;
+}
