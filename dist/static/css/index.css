@@ -443,6 +443,10 @@ body {
   color: #ababab;
   font-size: 16px;
 }
+.title img {
+  width: 100%;
+  display: block;
+}
 .loop {
   min-width: 1080px;
   max-width: 1080px;
