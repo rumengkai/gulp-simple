@@ -569,3 +569,32 @@ body {
   white-space: nowrap;
   color: #999;
 }
+#icon {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: 40px auto 20px;
+}
+#icon div {
+  cursor: pointer;
+  width: 240px;
+  height: 240px;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+#icon div img {
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin: 0 auto;
+}
+#icon div p {
+  align-items: center;
+  line-height: 28px;
+  font-size: 28px;
+  font-family: 900;
+}
